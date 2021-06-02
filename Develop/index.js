@@ -30,10 +30,11 @@ const questions = () => {
             name: 'Usage',
             message: 'What is this used for?',
           },
+          
           {
             type: 'input',
             name: 'Contributing',
-            message: 'Would you like to contribute to this project?',
+            message: 'Who is all contributing to this project?',
           },
           {
             type: 'input',
@@ -45,17 +46,24 @@ const questions = () => {
             name: 'Questions',
             message: 'Please list any questions or concerns regarding this project?',
           },
-         
+          {
+            type: 'input',
+            name: 'License',
+            message: 'Are there any licenses? enter y or n',
+            
+            
+          },
 
-    ]);
+        ]);
 
 };
+
 
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data) {}
 
 const generateMarkdown = (answers) =>
-`# Test ${answers.Title}
+`# ${answers.Title}
 
 ## Table of Contents
 ${answers.Title}
