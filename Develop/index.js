@@ -60,8 +60,8 @@ function init() {}
 // Function call to initialize app
 const init = () => {
   promptUser()
-    .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
-    .then(() => console.log('Successfully wrote to index.html'))
+    .then((answers) => writeFileAsync('markdown.md', generateMarkdown(answers)))
+    .then(() => console.log('Successfully wrote to markdown.md'))
     .catch((err) => console.error(err));
 };
 
